@@ -1,0 +1,46 @@
+<main>
+  <section id="uploadSection">
+    <h2>Upload & Edit Image</h2>
+    <form>
+      <label for="imageInput">Select image</label>
+      <input type="file" id="imageInput" accept="image/*" required />
+
+      <label for="editOptions">Choose edit option</label>
+      <select id="editOptions" required name="editOption">
+        <option value="" disabled selected>Select an action</option>
+        <option value="resize">Resize</option>
+        <option value="crop">Crop</option>
+        <option value="filter">Apply Filter</option>
+        <option value="convert">Convert Format</option>
+      </select>
+
+      <button type="submit">Upload Image</button>
+    </form>
+  </section>
+
+  <section id="imagesSection">
+    <h2>All Images</h2>
+    <div id="imagesList">
+      <div class="image-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="City at night" />
+        <span>city-lights.jpg</span>
+      </div>
+      <div class="image-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="Mountain view" />
+        <span>mountain-hike.jpg</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="historySection">
+    <h2>Image History</h2>
+    <div id="historyList">
+      <div class="history-item">
+        <span>Uploaded: city-lights.jpg</span>
+      </div>
+      <div class="history-item">
+        <span>Uploaded: mountain-hike.jpg</span>
+      </div>
+    </div>
+  </section>
+</main>
