@@ -21,13 +21,9 @@
   <section id="imagesSection">
     <h2>All Images</h2>
     <div id="imagesList">
-      <div class="image-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="City at night" />
-        <span>city-lights.jpg</span>
-      </div>
-      <div class="image-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="Mountain view" />
-        <span>mountain-hike.jpg</span>
+      <div class="imageDto-item" *ngFor="let imageDto of images">
+        <img [src]="imageDto.link" [alt]="imageDto.name" />
+        <span>{{ imageDto.name }}</span>
       </div>
     </div>
   </section>

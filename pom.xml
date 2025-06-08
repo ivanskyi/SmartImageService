@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ivanskyi</groupId>
-    <artifactId>my-smart-image-service</artifactId>
+    <artifactId>smart-image-service</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 

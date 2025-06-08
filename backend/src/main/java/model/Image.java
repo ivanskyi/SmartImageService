@@ -13,7 +13,8 @@ public class Image extends PanacheEntity {
 
     public String name;
 
-    public String path;
+    @Column(name = "file_data")
+    public byte[] file;
 
     @Column(name = "created_at")
     public LocalDateTime createdAt;

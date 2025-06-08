@@ -15,6 +15,16 @@ docker run -d \
   postgres:15
 ```
 
+```
+CREATE TABLE images (
+    id         BIGSERIAL PRIMARY KEY,
+    name       VARCHAR(255) NOT NULL,
+    file_data  BYTEA NOT NULL,
+    created_at TIMESTAMP DEFAULT now() NOT NULL,
+    status     VARCHAR(255) NOT NULL
+);
+```
+
 ## How to Start the Project
 
 ### 1. Build the project

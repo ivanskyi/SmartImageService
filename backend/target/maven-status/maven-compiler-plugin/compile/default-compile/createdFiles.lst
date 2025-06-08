@@ -1,4 +1,0 @@
-service/ImageService.class
-resource/ImageSocket.class
-model/Image.class
-repository/ImageRepository.class
